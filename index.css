@@ -1,0 +1,138 @@
+.contaner {
+    margin: 15px 10px 0 10px;
+    display: flex;
+}
+
+.navbar{
+    margin: 0 10px;
+}
+
+.continer .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .center-section {
+    display: flex;
+    margin-left: 100px;
+}
+
+.navbar .right-section {
+    display: flex;
+}
+
+.navbar .logo {
+    margin: 0 5px;
+    padding: 2px;
+}
+
+.navbar .right-section .btn{
+    padding: 5px;
+}
+
+a.logo{
+    height: 25px;
+}
+
+.btn.outline-btn{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-around;
+    border-radius: 30px;
+}
+.btn.outline-btn:hover{
+    cursor: pointer;
+    background-color: #def1ff;
+    border-color: transparent;
+}
+
+a.btn.outline-btn{
+    align-items: start;
+    justify-content: start;
+    padding: 10px 3px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+a.btn.outline-btn.btn-active{
+    background-color: #f0f0f0;
+    font-weight: 500;
+}
+
+a.btn.outline-btn.btn-active:hover{
+    background-color: #cccccc;
+}
+
+a.btn.outline-btn:hover{
+    background-color: #f0f0f0;
+}
+
+a.btn .icon{
+    margin: 0 20px 0 10px;
+}
+
+.navbar .btn .icon{
+    margin-right: 5px;
+}
+
+.primary{
+    color: #065fd4;
+    fill: #065fd4;
+}
+
+.search-box{
+    display: flex;
+}
+
+.search-box .textarea{
+    border: 1px solid #cccccc;
+    border-radius: 20px 0 0 20px;
+    height: 35px;
+    text-align: end;
+    vertical-align: middle;
+}
+
+.search-box .textarea input{
+    height: 32px;
+    width: 98%;
+    border: solid transparent;
+}
+.search-box .textarea input:focus-visible{
+    outline: 0;
+}
+
+.search-box button.btnarea{
+    border: 1px solid #cccccc;
+    border-left-color: transparent;
+    border-radius: 0 20px 20px 0;
+    height: 35px;
+}
+.search-box button.btnarea:hover{
+    border: 1px solid #c6c6c6;
+    border-left-color: transparent;
+    background-color: #f0f0f0;
+}
+.search-box div.btnarea{
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    margin: 0 15px;
+}
+
+.contaner .left-section{
+    padding: 0 5px;
+}
