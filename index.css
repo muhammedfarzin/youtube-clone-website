@@ -171,6 +171,11 @@ a.btn .icon {
     padding: 0 15px;
 }
 
+.menu-sections .icon svg{
+    max-width: 24px;
+    max-height: 24px;
+}
+
 .suggestions{
     display: table-cell;
     overflow-x: hidden;
@@ -193,10 +198,22 @@ a.btn .icon {
     color: #ffffff;
 }
 
+button.btn.text-btn:hover{
+    background-color: #cccccc !important;
+}
+
+button.btn.text-btn.btn-active:hover{
+    background-color: #000000 !important;
+}
+
 .suggested-videos{
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.video-card{
+    cursor: pointer;
 }
 
 .video-card .card{
@@ -240,6 +257,11 @@ a.btn .icon {
     color: #606060;
     font-size: 15px;
     font-weight: 400;
+}
+
+.video-details .subtitle.channel-title:hover{
+    color: #0f0f0f;
+    cursor: pointer;
 }
 
 .suggested-videos .video-card{
