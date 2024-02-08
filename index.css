@@ -267,3 +267,28 @@ button.btn.text-btn.btn-active:hover{
 .suggested-videos .video-card{
     padding: 10px;
 }
+
+.about{
+    padding: 8px 15px;
+}
+
+.about .guide-links{
+    padding: 7px 0 7px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .guide-links a{
+    text-decoration: none;
+    color: #606060;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 3px;
+}
+
+.guide-links.copyright{
+    font-size: 13px;
+    color: #606060;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
