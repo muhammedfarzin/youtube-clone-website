@@ -239,6 +239,7 @@ button.btn.text-btn.btn-active:hover{
 
 .video-details .icon img{
     width: 40px;
+    border-radius: 30px;
 }
 
 .video-details .right-section{
