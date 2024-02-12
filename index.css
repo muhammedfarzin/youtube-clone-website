@@ -7,9 +7,71 @@
 .contaner .right-section {
     margin-top: 10px;
     margin-left: 40px;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 1080px;
 }
 
-.navbar {
+.contaner .side-menu {
+    position: fixed;
+    height: 90vh;
+    width: 230px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.contaner .side-menu:hover {
+    width: 240px;
+    &::-webkit-scrollbar-thumb {
+        background-color: #8f8e8e;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+    }
+
+    &::-webkit-scrollbar {
+        width: 10PX;
+    }
+
+    &::-webkit-scrollbar-button:single-button {
+        background-color: #eee;
+        display: block;
+        background-size: 10px;
+        background-repeat: no-repeat;
+    }
+
+    &::-webkit-scrollbar-button:single-button:vertical:decrement {
+        height: 6px;
+        background-position: center;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(73, 73, 73)'><polygon points='50,00 0,50 100,50'/></svg>");
+        background-size: contain;
+    }
+    &::-webkit-scrollbar-button:single-button:vertical:increment {
+        height: 6px;
+        background-position: center;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
+        background-size: contain;
+    }
+}
+
+/* .contaner .side-menu::-webkit-scrollbar{
+    width: 6px;
+    color: #ccc;
+}
+
+.contaner .side-menu::-webkit-scrollbar-button {
+    background: #000
+}
+/* .contaner .side-menu::-webkit-scrollbar-track-piece {
+    background: #888
+} */
+.contaner .side-menu::-webkit-scrollbar-thumb {
+    background: #8d8d8d;
+}
+
+​ */ .navbar {
     margin: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +105,7 @@ a.logo {
     height: 25px;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #f0f0f0 !important;
 }
 
@@ -112,7 +174,8 @@ a.btn .icon {
     text-align: end;
     vertical-align: middle;
 }
-.search-box .textarea:focus-within{
+
+.search-box .textarea:focus-within {
     border-color: #065fd4;
 }
 
@@ -148,7 +211,7 @@ a.btn .icon {
     margin: 0 15px;
 }
 
-.left-section .menu-sections {
+.side-menu .menu-sections {
     padding: 8px 15px;
     border-bottom: 1px solid rgb(0 0 0 / 10%);
 }
@@ -171,18 +234,18 @@ a.btn .icon {
     padding: 0 15px;
 }
 
-.menu-sections .icon svg{
+.menu-sections .icon svg {
     max-width: 24px;
     max-height: 24px;
 }
 
-.suggestions{
+.suggestions {
     display: table-cell;
     overflow-x: hidden;
     white-space: nowrap;
 }
 
-.btn.text-btn{
+.btn.text-btn {
     margin: 0 3px;
     white-space: nowrap;
     text-align: center;
@@ -193,35 +256,35 @@ a.btn .icon {
     font-weight: 500;
 }
 
-.btn.text-btn.btn-active{
+.btn.text-btn.btn-active {
     background-color: #000000;
     color: #ffffff;
 }
 
-button.btn.text-btn:hover{
+button.btn.text-btn:hover {
     background-color: #cccccc !important;
 }
 
-button.btn.text-btn.btn-active:hover{
+button.btn.text-btn.btn-active:hover {
     background-color: #000000 !important;
 }
 
-.suggested-videos{
+.suggested-videos {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.video-card{
+.video-card {
     cursor: pointer;
 }
 
-.video-card .card{
+.video-card .card {
     border-radius: 15px !important;
     border: none;
 }
 
-.video-card .card img{
+.video-card .card img {
     height: 190px;
     object-fit: cover;
     border-radius: 15px;
@@ -229,23 +292,24 @@ button.btn.text-btn.btn-active:hover{
     margin-bottom: 5px;
 }
 
-.video-card .card img:hover{
+.video-card .card img:hover {
     border-radius: 0;
 }
 
-.video-details{
+.video-details {
     display: flex;
 }
 
-.video-details .icon img{
+.video-details .icon img {
     width: 40px;
     border-radius: 30px;
 }
 
-.video-details .right-section{
+.video-details .right-section {
     margin: 5px 10px;
 }
-.video-details .title{
+
+.video-details .title {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -254,32 +318,33 @@ button.btn.text-btn.btn-active:hover{
     font-size: 16px;
     font-weight: 500;
 }
-.video-details .subtitle{
+
+.video-details .subtitle {
     color: #606060;
     font-size: 15px;
     font-weight: 400;
 }
 
-.video-details .subtitle.channel-title:hover{
+.video-details .subtitle.channel-title:hover {
     color: #0f0f0f;
     cursor: pointer;
 }
 
-.suggested-videos .video-card{
+.suggested-videos .video-card {
     padding: 10px;
 }
 
-.about{
+.about {
     padding: 8px 15px;
 }
 
-.about .guide-links{
+.about .guide-links {
     padding: 7px 0 7px 15px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.about .guide-links a{
+.about .guide-links a {
     text-decoration: none;
     color: #606060;
     font-size: 12px;
@@ -287,7 +352,7 @@ button.btn.text-btn.btn-active:hover{
     margin: 0 3px;
 }
 
-.guide-links.copyright{
+.guide-links.copyright {
     font-size: 13px;
     color: #606060;
     font-weight: 300;
