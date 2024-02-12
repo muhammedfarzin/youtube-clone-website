@@ -1,3 +1,7 @@
+.suggested-videos::-webkit-scrollbar{
+    visibility: none;
+}
+
 .contaner {
     margin: 0;
     padding-top: 54px;
@@ -6,7 +10,6 @@
 }
 
 .contaner .right-section {
-    margin-top: 10px;
     margin-left: 40px;
     margin-left: auto;
     margin-right: 0;
@@ -233,6 +236,14 @@ a.btn .icon {
     max-height: 24px;
 }
 
+.suggested-keywords{
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    padding: 10px 0;
+    width: 1080px;
+}
+
 .suggestions {
     display: table-cell;
     overflow-x: hidden;
@@ -264,7 +275,7 @@ button.btn.text-btn.btn-active:hover {
 }
 
 .suggested-videos {
-    margin-top: 30px;
+    margin-top: 76.5px;
     display: flex;
     flex-wrap: wrap;
 }
