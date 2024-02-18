@@ -13,13 +13,17 @@
     margin-left: 40px;
     margin-left: auto;
     margin-right: 0;
-    max-width: 1080px;
+    padding-left: 2%;
+}
+
+.relative{
+    position: relative;
 }
 
 .contaner .side-menu {
     position: fixed;
     height: 90vh;
-    width: 230px;
+    width: 16.66666667%;
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
@@ -28,7 +32,7 @@
 }
 
 .contaner .side-menu:hover {
-    width: 240px;
+    width: 18%;
     &::-webkit-scrollbar-thumb {
         background-color: #8f8e8e;
         background-clip: padding-box;
@@ -82,7 +86,7 @@
 
 .navbar .center-section {
     display: flex;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 .navbar .right-section {
@@ -99,7 +103,7 @@
 }
 
 a.logo {
-    height: 25px;
+    height: 1.5rem;
 }
 
 .btn:hover {
@@ -290,7 +294,7 @@ button.btn.text-btn.btn-active:hover {
 }
 
 .video-card .card img {
-    height: 190px;
+    /* height: 190px; */
     object-fit: cover;
     border-radius: 15px;
     transition-duration: 250ms;
